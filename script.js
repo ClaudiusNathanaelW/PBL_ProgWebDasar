@@ -81,3 +81,20 @@ function slideRight() {
     var slider = document.getElementById("movieSlider");
     slider.scrollLeft += 240;
 }
+// Fungsi untuk membuka pop-up reaksi
+function openReactionModal() {
+    document.getElementById("reactionModal").style.display = "block";
+}
+
+// Fungsi untuk menutup pop-up reaksi
+function closeReactionModal() {
+    document.getElementById("reactionModal").style.display = "none";
+}
+
+// Menutup pop-up secara otomatis jika pengguna mengklik area gelap di luar kotak pop-up
+window.onclick = function(event) {
+    var modal = document.getElementById("reactionModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

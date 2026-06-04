@@ -80,8 +80,7 @@
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="review-reactions">
-                    &#127881; &#128525; &#128079; &#127873; <strong>67</strong>
+               <div class="review-reactions" onclick="openReactionModal()" style="cursor: pointer;" title="Lihat siapa yang bereaksi">🎉 😍 👏 🎁 <strong>67</strong>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -95,9 +94,9 @@
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="review-reactions">
-                    &#128077; &#128525; &#128079; &#127873; <strong>96</strong>
-                </div>
+               <div class="review-reactions" onclick="openReactionModal()" style="cursor: pointer;" title="Lihat siapa yang bereaksi">
+    👍 😍 👏 🎁 <strong>96</strong>
+</div>
                 <div class="clear"></div>
             </div>
 
@@ -110,12 +109,20 @@
                         <span>Description</span>
                     </div>
                 </div>
-                <div class="review-reactions">
-                    &#127881; &#128525; &#128079; &#127873; <strong>21</strong>
-                </div>
+                <div class="review-reactions" onclick="openReactionModal()" style="cursor: pointer;" title="Lihat siapa yang bereaksi">
+    🎉 😍 👏 🎁 <strong>21</strong>
+</div>
                 <div class="clear"></div>
-            </div>
-
+            </div> </div> <div id="reactionModal" class="reaction-modal">
+        <div class="reaction-modal-content">
+            <span class="close-btn" onclick="closeReactionModal()">&times;</span>
+            <h2 style="margin-top: 0; border-bottom: 2px solid #70a9a1; padding-bottom: 10px;">Reaksi Ulasan</h2>
+            
+            <ul class="reaction-list">
+                <li><div class="user-pic bg-red" style="display:inline-block; vertical-align:middle; width:30px; height:30px; border-radius:50%;"></div> <strong>Budi</strong> memberikan 🎉</li>
+                <li><div class="user-pic bg-blue" style="display:inline-block; vertical-align:middle; width:30px; height:30px; border-radius:50%;"></div> <strong>Siti</strong> memberikan 😍</li>
+                <li><div class="user-pic bg-green" style="display:inline-block; vertical-align:middle; width:30px; height:30px; border-radius:50%;"></div> <strong>Andi</strong> memberikan 👏</li>
+            </ul>
         </div>
     </div>
     <script src="script.js"></script>

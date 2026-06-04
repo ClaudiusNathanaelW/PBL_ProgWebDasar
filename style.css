@@ -609,3 +609,50 @@ body {
 .right-btn {
     right: -15px; /* Menggeser tombol ke pinggir kanan */
 }
+/* ===============================
+   Gaya Pop-up (Modal) Reaksi Emoji
+   =============================== */
+.reaction-modal {
+    display: none; /* Disembunyikan secara default */
+    position: fixed; 
+    z-index: 1000; /* Menimpa semua elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6); /* Efek latar belakang gelap transparan */
+}
+
+.reaction-modal-content {
+    background-color: #f4f1ea; /* Warna krem sesuai tema webmu */
+    margin: 10% auto; /* Jarak dari atas dan posisikan di tengah */
+    padding: 20px;
+    border: 2px solid #70a9a1; /* Border teal khas desainmu */
+    width: 40%; /* Lebar kotak pop-up */
+    box-sizing: border-box;
+}
+
+.close-btn {
+    color: #888;
+    float: right; /* Memanfaatkan Box Model Float */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+}
+
+.reaction-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reaction-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
