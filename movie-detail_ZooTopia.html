@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooTopia 2 - MovieDB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-cream">
+
+    <div class="navbar">
+        <div class="nav-left">
+            <a href="welcome.html" class="back-btn"> MovieDB</a>
+        </div>
+        <div class="nav-center">
+            <input type="text" class="search-bar" placeholder="Search Movies">
+        </div>
+        <div class="nav-right">
+            <button class="btn-black">Login</button>
+            <div class="user-avatar">&#128100;</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="container">
+        
+        <div class="movie-hero">
+            <div class="poster-col">
+                <img >
+            </div>
+            
+            <div class="details-col">
+                <div class="title-section">
+                    <h1 class="movie-title">ZooTopia 2<br>The Movie</h1>
+                    <div class="rating-box">
+                        <h2>4.5 / 5</h2>
+                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <h3 class="subtitle">ZooTopia 2 : The Movie</h3>
+                <p class="synopsis">
+                    The story follows Judy Hopps, a determined rabbit from the farming village of Bunnyburrow who dreams of becoming a police officer.
+                     Despite graduating at the top of her class at the Police Academy, Judy is met with skepticism by her boss, Chief Bogo, who assigns her to be a meter maid instead of a detective. 
+                     While on duty, Judy meets Nick Wilde, a smooth-talking, cynical fox who makes a living running scams. Later, when given a strict 48-hour deadline by Chief Bogo to solve a missing person's case (an otter named Mr. Otterton), Judy corners Nick into helping her.<br>
+                     <br>
+                     In the sequel, Judy and Nick continue their investigation, uncovering a plot to kill all the animals in the city, and eventually uncovering the true identity of their targets.
+                     As the unlikely duo investigates, they uncover a terrifying conspiracy: the missing predators have all gone "savage," reverting to their primitive, aggressive instincts. Judy and Nick must navigate the dangerous underworld of Zootopia, evade powerful criminal bosses, and solve a complex political plot to restore peace and equality to their city.
+                </p>
+                <div class="action-buttons">
+                    <button class="btn-action btn-trailer" onclick="playTrailer()">&#127916;</button>
+                    <button class="btn-action btn-gallery" onclick="openGallery()">&#128444;</button>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="categories-section">
+            <span class="nav-arrow">&#8592;</span>
+            <span class="bracket">[</span>
+            <button class="category-btn">Action</button>
+            <button class="category-btn">Comedy</button>
+            <button class="category-btn">Adventure</button>
+            <button class="category-btn">Fantasy</button>
+            <button class="category-btn">Anime</button>
+            <span class="bracket">]</span>
+            <span class="nav-arrow">&#8594;</span>
+            <div class="clear"></div>
+        </div>
+
+        <div class="reviews-section">
+            <h1 class="review-title">Reviews</h1>
+
+            <div class="review-card">
+                <p class="review-text">"Decent sequel, but not as good as the first one
+                Zootopia 2 is a decent and mostly enjoyable sequel, but after such a long wait, it's hard not to feel a little let down. The original film genuinely"</p>
+                <div class="review-user">
+                    <div class="user-pic bg-red"></div>
+                    <div class="user-info">
+                        <strong>Name</strong><br>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="review-reactions">
+                    &#127881; &#128525; &#128079; &#127873; <strong>67</strong>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="review-card">
+                <p class="review-text">"What A Fun Trip To The Zoo-topia
+                LIKES: The Animation The Adventure The Comedy The Voice Acting The New Song The Pace The Heart The References"</p>
+                <div class="review-user">
+                    <div class="user-pic bg-green"></div>
+                    <div class="user-info">
+                        <strong>Name</strong><br>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="review-reactions">
+                    &#128077; &#128525; &#128079; &#127873; <strong>96</strong>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="review-card">
+                <p class="review-text">"A genuinely glowing review"</p>
+                <div class="review-user">
+                    <div class="user-pic bg-blue"></div>
+                    <div class="user-info">
+                        <strong>Robert</strong><br>
+                        <span>Description</span>
+                    </div>
+                </div>
+                <div class="review-reactions">
+                    &#127881; &#128525; &#128079; &#127873; <strong>21</strong>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
