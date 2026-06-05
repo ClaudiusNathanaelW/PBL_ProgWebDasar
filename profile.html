@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB - Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="welcome.html" class="back-btn"> MovieDB</a>
+        </div>
+        <div class="nav-center">
+            <input type="text" class="search-bar" placeholder="Search Movies">
+        </div>
+        <div class="nav-right">
+            <button type="button" class="btn-black" onclick="window.location.href='index.html'">Login</button>
+        </div>
+        <div class="clear"></div>
+    </header>
+
+    <main class="profile-container">
+        <div class="avatar-section">
+          <a href="profile.html" style="text-decoration: none; display: block; cursor: pointer;">
+        
+        <div class="avatar-circle">
+            <i class="far fa-user"></i>
+        </div>
+        
+    </a>
+    </div>
+
+        <form id="profileForm">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+
+            <div class="form-group">
+                <label for="telp">No Telp</label>
+                <input type="tel" id="telp" name="telp">
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <input type="text" id="alamat" name="alamat">
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" rows="4"></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="save-btn">Save</button>
+            </div>
+        </form>
+
+        <div id="viewProfile" class="hidden">
+            <div class="info-row">
+                <div class="info-label">Nama Lengkap</div>
+                <div class="info-box" id="res-nama"></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">No Telp</div>
+                <div class="info-box" id="res-telp"></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Alamat</div>
+                <div class="info-box" id="res-alamat"></div>
+            </div>
+            <div class="info-row align-top">
+                <div class="info-label">Bio</div>
+                <div class="info-box bio-box" id="res-bio"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

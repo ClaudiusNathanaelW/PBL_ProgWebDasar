@@ -656,3 +656,163 @@ body {
     border-bottom: 1px solid #ccc;
     font-size: 16px;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f6f3ee;
+    color: #000;
+}
+
+/* === NAVBAR === */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6fb2b6;
+    padding: 15px 40px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+}
+
+.search-bar {
+    background-color: #f8eef3;
+    padding: 8px 15px;
+    border-radius: 20px;
+    width: 400px;
+    border: none;
+    outline: none;
+}
+
+.btn-black {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* === KONTEN PROFIL === */
+.profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.avatar-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.avatar-circle {
+    background-color: #e6ddff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-circle i {
+    font-size: 50px;
+    color: #4b3084;
+}
+
+/* === STYLING FORM === */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.save-btn {
+    background-color: #7ababc;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    padding: 12px 60px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* === CLASS BANTUAN === */
+.hidden {
+    display: none !important;
+}
+
+/* === STYLING TAMPILAN HASIL === */
+#viewProfile {
+    margin-top: 10px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-row.align-top {
+    align-items: flex-start; 
+}
+
+.info-label {
+    width: 160px;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.info-box {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #000;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 45px;
+}
+
+.bio-box {
+    min-height: 150px;
+    font-weight: 600;
+}
