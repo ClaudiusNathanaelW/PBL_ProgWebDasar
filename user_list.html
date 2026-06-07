@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovieDB - User List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="nav-left">
+            <a href="index.html" class="back-btn" style="text-decoration: none; color: #222; font-size: 24px; font-weight: bold;">MovieDB</a>
+        </div>
+        
+        <div id="nav-center">
+            <input type="text" id="search-bar" placeholder="Search Movies">
+        </div>
+        
+        <div id="nav-right">
+            <input type="button" value="Login" id="btn-login">
+            <div id="user-avatar" onclick="window.location.href='profile.html'" style="cursor: pointer;">&#128100;</div>
+        </div>
+        
+        <br style="clear: both;" />
+    </div>
+
+    <div id="main-container">
+        
+        <div id="sidebar">
+            <ul id="menu-list">
+                <li class="active" onclick="window.location.href='admin_dashboard.html'" style="cursor: pointer;">Dashboard</li>
+                <li class="active" onclick="window.location.href='movie_list.html'" style="cursor: pointer;">Movie List</li>
+                <li class="active" onclick="window.location.href='user_list.html'" style="cursor: pointer;">User List</li>
+                <li class="active" onclick="window.location.href='merch_history.html'" style="cursor: pointer;">Merch Transaction History</li>
+            </ul>
+            <div id="toggle-btn" onClick="toggleSidebar()">&lt;</div>
+        </div>
+
+        <div id="content">
+
+            <div id="transaction-section">
+                <h3>USER LIST</h3>
+                <div style="margin-bottom: 20px;">
+                    <div style="float: right;">
+                        <a href="#" style="text-decoration: none; font-size: 28px; color: #222222; font-weight: bold;"></a>
+                    </div>
+                    <br style="clear: both;" />
+                </div>
+
+               <table border="0" cellspacing="0" cellpadding="15" width="100%">
+    <tr>
+        <th align="left">ID User</th>
+        <th align="left">Nama</th>
+        <th align="left">Email</th>
+        <th align="center">Tanggal</th>
+        <th align="center">Status</th>
+        <th align="center">Action</th>
+    </tr>
+    
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td align="center"></td>
+        
+        <td align="center"><span class="status-active"></span></td>
+        
+        <td align="center">
+            <button class="btn-ban">BAN</button>
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td align="center"></td>
+        <td align="center"><span class="status-inactive"></span></td>
+        <td align="center">
+            <button class="btn-ban">BAN</button>
+        </td>
+    </tr>
+    </table>
+        </div>
+        <br style="clear: both;" />
+    </div>
+</body>
+</html>

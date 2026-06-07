@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovieDB - Admin Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="nav-left">
+            <a href="index.html" class="back-btn" style="text-decoration: none; color: #222; font-size: 24px; font-weight: bold;">MovieDB</a>
+        </div>
+        
+        <div id="nav-center">
+            <input type="text" id="search-bar" placeholder="Search Movies">
+        </div>
+        
+        <div id="nav-right">
+            <input type="button" value="Login" id="btn-login">
+            <div id="user-avatar" onclick="window.location.href='profile.html'" style="cursor: pointer;">&#128100;</div>
+        </div>
+        
+        <br style="clear: both;" />
+    </div>
+
+    <div id="main-container">
+        
+        <div id="sidebar">
+            <ul id="menu-list">
+                <li class="active" onclick="window.location.href='admin_dashboard.html'" style="cursor: pointer;">Dashboard</li>
+                <li class="active" onclick="window.location.href='movie_list.html'" style="cursor: pointer;">Movie List</li>
+                <li class="active" onclick="window.location.href='user_list.html'" style="cursor: pointer;">User List</li>
+                <li class="active" onclick="window.location.href='merch_history.html'" style="cursor: pointer;">Merch Transaction History</li>
+            </ul>
+            <div id="toggle-btn" onClick="toggleSidebar()">&lt;</div>
+        </div>
+
+        <div id="content">
+            
+            <div id="summary-cards">
+                <div class="card">
+                    <p class="card-title">Total Film</p>
+                    <div class="card-body">
+                        <span class="card-icon">🎬</span>
+                        <span class="card-value">20</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <p class="card-title">Total Active User</p>
+                    <div class="card-body">
+                        <span class="card-icon">👤</span>
+                        <span class="card-value">50</span>
+                    </div>
+                </div>
+                <br style="clear: both;" />
+            </div>
+
+            <div id="transaction-section">
+                <h3>Merch Transaction History</h3>
+                <br>
+                <table border="0" cellspacing="0" cellpadding="15" width="100%">
+    <tr>
+        <th align="left">ID Transaction</th>
+        <th align="left">Nama</th>
+        <th align="center">Qty</th>
+        <th align="center">Tanggal</th>
+        <th align="center">Status</th>
+    </tr>
+    
+    <tr>
+        <td></td>
+        <td><b></b></td>
+        <td align="center"></td>
+        <td align="center"></td>
+        <td align="center">
+            <span class="status-paid"></span>
+        </td>
+    </tr>
+    
+    <tr>
+        <td></td>
+        <td><b></b></td>
+        <td align="center"></td>
+        <td align="center"></td>
+        <td align="center"><span class="status-paid">Paid</span></td>
+    </tr>
+    </table>
+            </div>
+            
+        </div>
+        <br style="clear: both;" />
+    </div>
+
+</body>
+</html>

@@ -816,3 +816,210 @@ body {
     min-height: 150px;
     font-weight: 600;
 }
+/* --- Pengaturan Dasar Body --- */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #F8F5F0;
+}
+
+/* --- Top Navbar (Ini bagian yang sebelumnya hilang) --- */
+#navbar {
+    background-color: #40A2A6;
+    padding: 15px 20px;
+}
+
+#nav-left {
+    float: left;
+    width: 25%;
+}
+
+#nav-center {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+#nav-center input {
+    width: 80%;
+    padding: 10px 15px;
+    background-color: #E8E2EC;
+    border: none;
+    color: #666666;
+}
+
+#nav-right {
+    float: right;
+    width: 20%;
+    text-align: right;
+}
+
+#btn-login {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#user-avatar {
+    display: inline-block;
+    background-color: #D3C4E3;
+    color: #7B5C9E;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+/* --- Main Layout --- */
+#main-container {
+    width: 100%;
+}
+
+/* --- Sidebar --- */
+#sidebar {
+    float: left;
+    width: 20%;
+    height: 600px;
+    background-color: #8FBCBC;
+    position: relative; 
+}
+
+#menu-list {
+    list-style-type: none; 
+    padding: 0px;
+    margin-top: 30px;
+}
+
+#menu-list li {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#menu-list li.active {
+    color: #222222;
+}
+
+#toggle-btn {
+    position: absolute; 
+    right: -15px;
+    top: 250px;
+    width: 30px;
+    height: 30px;
+    background-color: #8FBCBC;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+/* --- Main Content Area --- */
+#content {
+    float: left;
+    width: 75%;
+    padding: 30px;
+}
+
+/* --- Summary Cards --- */
+#summary-cards {
+    margin-bottom: 40px;
+}
+
+.card {
+    float: left;
+    background-color: #FFFFFF;
+    width: 250px;
+    padding: 20px;
+    margin-right: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.card-icon {
+    font-size: 36px;
+}
+
+.card-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* --- Transaction Table --- */
+#transaction-section {
+    background-color: #FFFFFF;
+    padding: 20px 30px;
+    border: 1px solid #EEEEEE;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid #DDDDDD;
+    color: #666666;
+}
+
+td {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.status-paid {
+    color: #28A745;
+}
+/* --- Action Buttons untuk Tabel --- */
+.btn-update {
+    background-color: #28A745;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.btn-delete {
+    background-color: #DC3545;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* --- Text Status Colors --- */
+.status-active {
+    color: #28A745; /* Hijau */
+    font-size: 14px;
+}
+
+.status-inactive {
+    color: #DC3545; /* Merah */
+    font-size: 14px;
+}
+
+/* --- Action Button BAN --- */
+.btn-ban {
+    background-color: #DC3545; /* Merah */
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 25px; /* Padding kiri-kanan lebih lebar untuk bentuk kapsul */
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}

@@ -124,3 +124,27 @@ profileForm.addEventListener('submit', function(e) {
     profileForm.classList.add('hidden');
     viewProfile.classList.remove('hidden');
 });
+// Variabel untuk melacak status sidebar
+var isSidebarCollapsed = false;
+
+// Fungsi ini dipanggil saat id="toggle-btn" diklik
+function toggleSidebar() {
+    // Mengambil elemen berdasarkan ID
+    var sidebar = document.getElementById("sidebar");
+    var content = document.getElementById("content");
+    var toggleBtn = document.getElementById("toggle-btn");
+
+    if (isSidebarCollapsed == false) {
+        // Menyempitkan sidebar menggunakan manipulasi CSS Inline
+        sidebar.style.width = "5%";
+        content.style.width = "90%";
+        toggleBtn.innerHTML = ">"; // Mengubah ikon panah
+        isSidebarCollapsed = true;
+    } else {
+        // Mengembalikan sidebar ke ukuran semula
+        sidebar.style.width = "20%";
+        content.style.width = "75%";
+        toggleBtn.innerHTML = "<"; // Mengembalikan ikon panah
+        isSidebarCollapsed = false;
+    }
+}
