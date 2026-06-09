@@ -1,0 +1,178 @@
+/* --- Layout Utama & Sidebar --- */
+#main-container {
+    width: 100%;
+}
+
+#sidebar {
+    float: left;
+    transition: width 0.3s ease;
+    width: 20%;
+    height: 600px;
+    background-color: #8FBCBC;
+    position: relative;
+    overflow: hidden; 
+    white-space: nowrap;
+}
+
+#sidebar.collapsed {
+    width: 70px !important;
+}
+
+#sidebar.collapsed #menu-list li {
+    color: transparent !important; 
+}
+
+#menu-list {
+    list-style-type: none; 
+    padding: 0px;
+    margin-top: 30px;
+}
+
+#menu-list li {
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#menu-list li.active {
+    color: #222222;
+}
+
+#content {
+    float: left;
+    width: 75%;
+    padding: 30px;
+    transition: width 0.3s ease;
+}
+
+#content.expanded {
+    width: calc(100% - 70px) !important; 
+}
+
+#toggle-btn {
+    position: absolute !important;
+    bottom: 20px !important; 
+    left: 6% !important;
+    transform: translateX(-50%) !important; 
+    width: 35px !important;
+    height: 35px !important;
+    background-color: #3e444b !important; 
+    border-radius: 6px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+#toggle-btn img {
+    width: 24px !important;
+    height: auto !important;
+    display: block !important;
+}
+
+#user-avatar, #toggle-btn {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* --- Kartu Ringkasan (Summary Cards) --- */
+#summary-cards {
+    margin-bottom: 40px;
+}
+
+.card {
+    float: left;
+    background-color: #FFFFFF;
+    width: 250px;
+    padding: 20px;
+    margin-right: 30px;
+    border: 1px solid #EEEEEE;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.card-icon {
+    font-size: 36px;
+}
+
+.card-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* --- Tabel Transaksi & Manajemen User --- */
+#transaction-section {
+    background-color: #FFFFFF;
+    padding: 20px 30px;
+    border: 1px solid #EEEEEE;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 2px solid #DDDDDD;
+    color: #666666;
+}
+
+td {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.status-paid {
+    color: #28A745;
+}
+
+.status-active {
+    color: #28A745; 
+    font-size: 14px;
+}
+
+.status-inactive {
+    color: #DC3545; 
+    font-size: 14px;
+}
+
+/* --- Tombol Aksi Tabel --- */
+.btn-update {
+    background-color: #28A745;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.btn-delete {
+    background-color: #DC3545;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.btn-ban {
+    background-color: #DC3545; 
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 25px; 
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}

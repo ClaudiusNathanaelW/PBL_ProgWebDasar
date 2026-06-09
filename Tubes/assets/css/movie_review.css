@@ -1,0 +1,219 @@
+.movie-hero {
+    margin-bottom: 30px;
+}
+
+.poster-col {
+    float: left;
+    width: 38%;
+}
+
+.movie-poster {
+    width: 100%;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.details-col {
+    float: right;
+    width: 58%;
+}
+
+.title-section {
+    margin-bottom: 5px;
+}
+
+.movie-title {
+    float: left;
+    font-size: 38px;
+    color: #2c3e50;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.rating-box {
+    float: right;
+    background-color: #d3d3d3;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rating-box h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.stars {
+    color: gold;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #000;
+}
+
+.synopsis {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/* --- Action Buttons --- */
+.action-buttons {
+    text-align: center;
+}
+
+.btn-action {
+    width: 80px;
+    height: 60px;
+    font-size: 28px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-trailer { background-color: #f28b82; }
+.btn-gallery { background-color: #7ababa; }
+.btn-merch { background-color: #00c853; }
+
+/* --- Categories Section --- */
+.categories-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.categories-section .nav-arrow, 
+.categories-section .bracket {
+    float: left;
+    font-size: 24px;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+.categories-section .bracket {
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.categories-section .category-btn {
+    float: left;
+    margin: 5px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* --- Reviews Feed --- */
+.reviews-section {
+    margin-top: 30px;
+}
+
+.review-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.review-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.review-text {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.review-user {
+    float: left;
+}
+
+.user-pic {
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.bg-red { background-color: darkred; }
+.bg-green { background-color: darkolivegreen; }
+.bg-blue { background-color: #2c3e50; }
+
+.user-info {
+    float: left;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.user-info span {
+    color: gray;
+}
+
+.review-reactions {
+    float: right;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* --- Pop-up (Modal) Reaksi Emoji --- */
+.reaction-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6); 
+}
+
+.reaction-modal-content {
+    background-color: #f4f1ea; 
+    margin: 10% auto; 
+    padding: 20px;
+    border: 2px solid #70a9a1; 
+    width: 40%; 
+    box-sizing: border-box;
+}
+
+.reaction-modal-content .close-btn {
+    color: #888;
+    float: right; 
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reaction-modal-content .close-btn:hover,
+.reaction-modal-content .close-btn:focus {
+    color: #000;
+}
+
+.reaction-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reaction-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
