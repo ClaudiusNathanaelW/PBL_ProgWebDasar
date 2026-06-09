@@ -19,8 +19,8 @@ function formatRupiah($angka) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pembayaran MovieDB</title>
-<link rel="stylesheet" href="pembayaran.css">
-<script src="pembayaran.js"></script>
+<link rel="stylesheet" href="assets/pembayaran.css">
+<script src="assets/pembayaran.js"></script>
 </head>
 
 <body class="pembayaran-page">

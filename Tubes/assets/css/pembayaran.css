@@ -1,0 +1,308 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f1ea;
+}
+
+
+.clearfix::after,
+.payment-grid::after,
+.alamat-header::after,
+.produk-item::after,
+.ringkasan-row::after,
+.info-row::after,
+.status-pembayaran-box::after,
+.qris-header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.checkout-container {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.checkout-card {
+    background: #dcdcdc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Alamat */
+.alamat-header h3 {
+    float: left; 
+    margin: 0;
+    padding-top: 5px;
+}
+
+.btn-ubah-alamat {
+    float: right; 
+    border: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.alamat-box {
+    margin-top: 15px;
+    clear: both; 
+}
+
+.placeholder-text {
+    color: #777;
+}
+
+.hapus-alamat-x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+    display: none;
+    font-weight: bold;
+}
+
+.payment-grid {
+    width: 100%;
+}
+
+.ringkasan-card {
+    width: 70%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.payment-card {
+    width: 27%;
+    float: right; 
+    box-sizing: border-box;
+}
+
+
+.produk-item, .ringkasan-row, .info-row {
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+
+.produk-item span:first-child,.ringkasan-row span:first-child, .info-row span:first-child {
+    float: left;
+}
+
+.produk-item span:last-child,.ringkasan-row span:last-child,.info-row strong,.info-row span:last-child {
+    float: right;
+}
+
+.produk-harga {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+
+/* STATUS PEMBAYARAN */
+.qris-box {
+    width: 100%;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.qris-box:hover {
+    transform: scale(1.02);
+}
+
+.status-pembayaran-box {
+    margin-top: 15px;
+}
+
+.status-pembayaran-box span:first-child {
+    float: left;
+    margin-top: 2px;
+}
+
+
+.status-pembayaran-box div,.status-pembayaran-box .status-kanan {
+    float: right;
+}
+
+.bulatan-unpaid, .bulatan-paid {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.bulatan-unpaid { 
+    background: red; }
+
+.bulatan-paid { 
+    background: green; }
+
+.teks-unpaid { 
+    color: red; 
+    font-weight: bold; 
+    vertical-align: middle;
+ }
+
+.teks-paid { 
+    color: green; 
+    font-weight: bold; 
+    vertical-align: middle; 
+}
+
+.btn-utama-bayar {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    background: #2ecc40;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; 
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 1000;
+}
+
+.modal-content-box {
+    width: 350px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -160px;
+    margin-left: -175px;
+    box-sizing: border-box;
+}
+
+.modal-content-box input,
+.modal-content-box textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-close-corner {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+}
+
+.btn-save {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background: #ff6b00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.popup-qris {
+    width: 420px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 50%; left: 50%;
+    margin-top: -240px; 
+    margin-left: -210px;
+    box-sizing: border-box;
+}
+
+.logo-qris {
+    font-size: 24px;
+    font-weight: bold;
+    float: left;
+}
+
+.qris-image-box {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto; 
+    border: 2px dashed #ccc;
+    text-align: center; 
+    box-sizing: border-box;
+}
+
+.qris-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.qris-info {
+    margin-top: 20px;
+}
+
+.countdown-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.countdown-box h2 {
+    margin: 10px 0;
+    color: #ff6b00;
+}
+
+.btn-konfirmasi-bayar {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.btn-konfirmasi-bayar:hover {
+    background: #218838;
+}
+
+@media(max-width: 768px) {
+    .ringkasan-card, 
+    .payment-card {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .checkout-container {
+        width: 90%;
+    }
+}
