@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MovieDB Merchandise</title>
-        <link rel="stylesheet" href="Merch/main_style.css">
-        <script src="Merch/main_script.js"></script>
+        <link rel="stylesheet" href="merc.css">
+        <script src="merc.js"></script>
     </head>
 
     <body class="bg-cream">
