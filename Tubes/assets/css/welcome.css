@@ -1,0 +1,206 @@
+/* ================= HALAMAN WELCOME ================= */
+.bottom-bg {
+    background-color: #f4f1ea;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+.categories-container {
+    width: 780px;
+    margin: 0 auto;
+}
+.icon-nav, .bracket {
+    float: left;
+    font-size: 28px;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.arrow {
+
+}
+
+.bracket {
+    font-size: 32px;
+    font-weight: lighter;
+    margin-top: 2px;
+}
+.category-btn {
+    float: left;
+    margin: 5px 8px;
+    padding: 6px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #f4f1ea;
+    font-weight: bold;
+    font-size: 18px;
+}
+.article-section {
+    max-width: 800px;      
+    width: 90%;           
+    margin: 50px auto;    
+    padding: 20px;        
+    font-size: 16px;      
+    line-height: 1.8;         
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+/* === HERO WELCOME === */
+.hero-welcome {
+    position: relative;
+    height: 400px;
+    /* Background Clapperboard */
+    background: url('https://images.unsplash.com/photo-1585647347384-2593bc35786b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.hero-posters {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+    padding-bottom: 20px;
+}
+
+.hero-posters img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.hero-posters img:hover {
+    transform: translateY(-5px);
+    border-color: #7ababa;
+}
+
+
+/* === MOVIE CATALOG GRID === */
+.movie-catalog {
+    padding: 40px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Mengatur menjadi 2 Kolom */
+    gap: 30px;
+}
+
+.movie-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.movie-card h4 {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* --- PENGATURAN SLIDE BAR FILM --- */
+
+.slider-wrapper {
+    position: relative;
+    width: 90%; 
+    margin: 20px auto; 
+    text-align: center;
+}
+
+.movie-catalog {
+    display: block; /* Menetralkan jika ada efek 'float' dari kodingan lamamu */
+    width: 100%; /* Memaksa wadah mengambil ruang penuh */
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scroll-behavior: smooth; 
+    padding: 10px 0;
+    text-align: center; 
+}
+
+/* Menyembunyikan scrollbar jelek bawaan browser agar terlihat premium */
+.movie-catalog::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-card {
+    display: inline-block; /* Pengganti fungsi Float agar berjajar ke samping */
+    vertical-align: top;
+    width: 200px; /* Ukuran lebar masing-masing poster */
+    margin: 0 20px; /* Jarak antar kartu film */
+    white-space: normal; /* Mengembalikan teks di bawah poster agar normal */
+    text-align: center;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 8px; /* Memberikan efek lengkung di sudut poster */
+}
+
+/* Pengaturan Tampilan Tombol Geser */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(112, 169, 161, 0.8); /* Menggunakan warna teal khas desainmu */
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.slide-btn:hover {
+    background-color: #333; /* Warna berubah jadi gelap saat kursor diarahkan */
+}
+
+.left-btn {
+    left: -15px; /* Menggeser tombol ke pinggir kiri */
+}
+
+.right-btn {
+    right: -15px; /* Menggeser tombol ke pinggir kanan */
+}
+

@@ -1,5 +1,5 @@
 <?php
-require_once 'config.php';
+$conn = require_once '../../config.php';
 
 $sql_film = "SELECT COUNT(id_movie) AS total_film FROM movies";
 $result_film = mysqli_query($conn, $sql_film);
@@ -23,12 +23,12 @@ $sql_trx = "SELECT
             LIMIT 5";
 $result_trx = mysqli_query($conn, $sql_trx);
 
-include 'header.php';
-include 'sidebar.php';
+include '../layouts/header.php';
+include '../layouts/sidebar.php';
 ?>
 
 
-<link rel="stylesheet" href="assets/css/admin_dashboard.css">
+<link rel="stylesheet" href="../../assets/css/admin_dashboard.css">
 
 <div id="content">
     
@@ -37,7 +37,7 @@ include 'sidebar.php';
             <p class="card-title">Total Film</p>
             <div class="card-body" style="white-space: nowrap;">
                 <span class="card-icon" style="display: inline-block; vertical-align: middle; margin-right: 10px;">
-                    <img src="assets/img_icon/movie.png" alt="Movie Icon" style="width: 36px; height: auto;">
+                    <img src="../../assets/img_icon/movie.png" alt="Movie Icon" style="width: 36px; height: auto;">
                 </span>
                 <span class="card-value" style="display: inline-block; vertical-align: middle;"><?php echo $total_film; ?></span>
             </div>
@@ -47,7 +47,7 @@ include 'sidebar.php';
             <p class="card-title">Total Active User</p>
             <div class="card-body" style="white-space: nowrap;">
                 <span class="card-icon" style="display: inline-block; vertical-align: middle; margin-right: 10px;">
-                    <img src="assets/img_icon/user.png" alt="User Icon" style="width: 36px; height: auto;">
+                    <img src="../../assets/img_icon/user.png" alt="User Icon" style="width: 36px; height: auto;">
                 </span>
                 <span class="card-value" style="display: inline-block; vertical-align: middle;"><?php echo $total_user; ?></span>
             </div>

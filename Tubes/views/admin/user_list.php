@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php'; 
+$conn = require '../../config.php'; 
 
 if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'admin') {
     header("Location: index.php");
@@ -11,8 +11,8 @@ $query = "SELECT * FROM users ORDER BY created_at DESC";
 $result = mysqli_query($conn, $query);
 ?>
 
-<?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
+<?php include '../layouts/header.php'; ?>
+<?php include '../layouts/sidebar.php'; ?>
 
         <div id="content">
             <div id="transaction-section">

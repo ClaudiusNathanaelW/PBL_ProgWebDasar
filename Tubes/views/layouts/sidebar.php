@@ -6,6 +6,6 @@
                 <li class="active" onclick="window.location.href='merch_history.php'" style="cursor: pointer;">Merch Transaction History</li>
             </ul>
             <div id="toggle-btn" onclick="toggleSidebar()">
-                <img src="assets/img_misc/sidebar_close.png" alt="Toggle" id="sidebar-icon">
+                <img src="../../assets/img_misc/sidebar_close.png" alt="Toggle" id="sidebar-icon">
             </div>
         </div>

@@ -1,10 +1,11 @@
 <?php 
-include 'header.php'; 
-include 'sidebar.php'; 
+$conn = require '../../config.php';
+include '../layouts/header.php'; 
+include '../layouts/sidebar.php'; 
 ?>
 
-<link rel="stylesheet" href="add_moviee.css">
-<script src="add_moviee.js"></script>
+<link rel="stylesheet" href="../../assets/css/add_movie.css">
+<script src="../../assets/js/add_moviee.js"></script>
 
 <div class="main-content">
     <div class="form-container">

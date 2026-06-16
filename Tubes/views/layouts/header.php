@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>MovieDB - Admin Homepage</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <script type="text/javascript" src="../../assets/js/script.js"></script>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
         <div id="nav-right">
             <input type="button" value="Login" id="btn-login">
             <div id="user-avatar" onclick="window.location.href='profile.php'">
-                <img src="assets/img_misc/avatar_placeholder.png" alt="Admin Avatar">
+                <img src="../../assets/img_misc/avatar_placeholder.png" alt="Admin Avatar">
             </div>
         </div>
         

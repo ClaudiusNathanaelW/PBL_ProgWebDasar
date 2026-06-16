@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+$conn = require '../config.php';
 $message = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_reset'])) {
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_reset'])) {
         mysqli_stmt_bind_param($stmt_update, "ss", $new_password, $username);
         
         if (mysqli_stmt_execute($stmt_update)) {
-            $message = "<p style='color: #4CAF50; text-align: center; margin-bottom: 15px;'>Password berhasil di-reset! Silakan <a href='index.php' style='color:#2b78e4;'>Login</a>.</p>";
+            $message = "<p style='color: #4CAF50; text-align: center; margin-bottom: 15px;'>Password berhasil di-reset! Silakan <a href='../views/user/index.php' style='color:#2b78e4;'>Login</a>.</p>";
         } else {
             $message = "<p style='color: #ff4d4d; text-align: center; margin-bottom: 15px;'>Gagal mengubah password.</p>";
         }
@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_reset'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieDB - Reset Password</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> </head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css"> </head>
 <body class="bg-register">
     
     <header class="navbar">
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_reset'])) {
             <input type="text" class="search-bar" placeholder="Search Movies">
         </div>
         <div class="nav-right">
-            <button type="button" class="btn-black" onclick="window.location.href='index.php'">Login</button>
+            <button type="button" class="btn-black" onclick="window.location.href='../views/user/index.php'">Login</button>
         </div>
         <div class="clear"></div>
     </header>
@@ -76,5 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_reset'])) {
             </div>
         </form>
     </main>
+
+    <script src="../assets/js/reset-password.js"></script>
 </body>
 </html>

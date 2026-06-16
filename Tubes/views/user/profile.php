@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php';
+$conn = require '../../config.php';
 
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
@@ -30,7 +30,7 @@ $result_user = mysqli_query($conn, $query_user);
 $user_data = mysqli_fetch_assoc($result_user);
 ?>
 
-<?php include 'header.php'; ?>
+<?php include '../layouts/header.php'; ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <main class="profile-container">
@@ -90,5 +90,7 @@ $user_data = mysqli_fetch_assoc($result_user);
         </div>
     </main>
 
-    </div> </body>
+    </div> 
+    <script src="../../assets/js/profile.js"></script>
+</body>
 </html>

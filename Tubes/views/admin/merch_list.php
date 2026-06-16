@@ -1,17 +1,17 @@
 <?php
-require 'config.php';
+$conn = require '../../config.php';
 $sql = "SELECT * FROM merch"; 
 $result = $conn->query($sql);
-include 'header.php';
-include 'sidebar.php';
+include '../layouts/header.php';
+include '../layouts/sidebar.php';
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>MovieDB - Merch List</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+    <script type="text/javascript" src="../../assets/js/script.js"></script>
 </head>
 <body>
 

@@ -1,0 +1,83 @@
+/* ================= HALAMAN LOGIN ================= */
+.top-bg {
+    background-image: url('https://wallup.net/wp-content/uploads/2019/09/859126-poster-movie-film-movies-posters-748x529.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height : 400px;
+    padding-bottom: 80px; 
+}
+.login-box {
+    width: 600px;
+    margin: 60px auto 0 auto;
+    background-color: rgba(30, 30, 30, 0.7); 
+    padding: 40px;
+    border-radius: 25px;
+}
+.title-login {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.form-label-login {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+.input-field-login {
+    width: 92%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px; 
+    font-size: 18px;
+}
+.links {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+.btn-login-submit {
+    background-color: black;
+    color: white;
+    padding: 15px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+
+/* === KODE CSS UNTUK POP-UP === */
+.modal-overlay {
+    display: none; /* Sembunyikan pop-up secara default */
+    position: fixed; /* Mengunci posisi agar melayang di layar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Efek redup transparan */
+    z-index: 9999; /* Memastikan pop-up berada di lapisan paling atas */
+}
+
+.modal-overlay .login-box {
+    margin: 10% auto 0 auto; /* Menengahkan kotak form */
+    position: relative;
+}
+
+/* Desain Tombol X (Close) */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #70a9a1; /* Berubah warna saat di-hover */
+}
+

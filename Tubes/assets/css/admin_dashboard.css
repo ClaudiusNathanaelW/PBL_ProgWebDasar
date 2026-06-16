@@ -176,3 +176,24 @@ td {
     font-weight: bold;
     font-size: 12px;
 }
+/* === TAMBAHAN UNTUK DASHBOARD.HTML === */
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.back-btn:hover {
+    transform: scale(1.1);
+}
+
+

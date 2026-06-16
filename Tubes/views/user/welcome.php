@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+$conn = require '../../config.php';
 
 $query_movies = "SELECT id_movie, title, poster_url FROM movies ORDER BY release_date DESC";
 $result_movies = mysqli_query($conn, $query_movies);
@@ -14,7 +14,8 @@ if (!$result_movies) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - MovieDB</title>
-    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/welcome.css"> 
 </head>
 <body>
     <header class="navbar">
@@ -59,7 +60,7 @@ if (!$result_movies) {
             ?>
                     <div class="movie-card">
                         <a href="movie_review.php?id=<?= $movie['id_movie'] ?>" style="text-decoration: none; color: inherit;">
-                            <img src="assets/assets/img_movie/<?= htmlspecialchars($poster) ?>" alt="<?= htmlspecialchars($movie['title']) ?>">
+                            <img src="../../assets/img_movie/<?= htmlspecialchars($poster) ?>" alt="<?= htmlspecialchars($movie['title']) ?>">
                             <h4><?= htmlspecialchars($movie['title']) ?></h4>
                         </a>
                     </div>
@@ -74,6 +75,7 @@ if (!$result_movies) {
         <button class="slide-btn right-btn" onclick="slideRight()">&#10095;</button>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/welcome.js"></script>
 </body>
 </html>

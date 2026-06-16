@@ -1,5 +1,5 @@
 <?php
-require 'config.php'; 
+$conn = require '../config.php'; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = mysqli_real_escape_string($conn, $_POST['username']);
@@ -22,13 +22,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_id'] = $row['id_user'];
             $_SESSION['username'] = $row['username'];
             
-            header("Location: welcome.php");
+            header("Location: ../views/user/welcome.php");
             exit;
         } else {
-            echo "<script>alert('Password Salah!'); window.location.href='index.php';</script>";
+            echo "<script>alert('Password Salah!'); window.location.href='../views/user/index.php';</script>";
         }
     } else {
-        echo "<script>alert('Username tidak ditemukan!'); window.location.href='index.php';</script>";
+        echo "<script>alert('Username tidak ditemukan!'); window.location.href='../views/user/index.php';</script>";
     }
 }
 ?>

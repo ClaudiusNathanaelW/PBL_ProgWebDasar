@@ -3,14 +3,19 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-$host = "localhost";
-$user = "root";       
-$pass = "";           
-$db   = "db_movie"; 
+try {
+    $host = "localhost";
+    $user = "root";
+    $pass = "";
+    $db   = "db_movie";
 
-$conn = mysqli_connect($host, $user, $pass, $db);
+    $conn = mysqli_connect($host, $user, $pass, $db);
 
-if (!$conn) {
-    die("Koneksi Database Gagal: " . mysqli_connect_error());
+    if (!$conn) {
+        throw new Exception("Koneksi Database Gagal: " . mysqli_connect_error());
+    }
+
+    return $conn;
+} catch (Exception $e) {
+    die($e->getMessage());
 }
-?>

@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+$conn = require '../../config.php';
 
 if (isset($_SESSION['user_id'])) {
     header("Location: welcome.php");
@@ -10,7 +10,8 @@ if (isset($_SESSION['user_id'])) {
 <html>
 <head>
     <title>MovieDB - Home</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> </head>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/index.css"> </head>
 <body>
     <div class="top-bg">
         <div class="navbar">
@@ -27,7 +28,7 @@ if (isset($_SESSION['user_id'])) {
     
     <div class="bottom-bg">
         <div class="categories-container">
-            <div class="icon-nav"><img class="arrow" src="assets/img_icon/left_arrow.png" alt="left_arrow"></div>
+            <div class="icon-nav"><img class="arrow" src="../../assets/img_icon/left_arrow.png" alt="left_arrow"></div>
             <div class="bracket">[</div>
             <div class="category-btn">Comedy</div>
             <div class="category-btn">Fantasy</div>
@@ -35,7 +36,7 @@ if (isset($_SESSION['user_id'])) {
             <div class="category-btn">Adventure</div>
             <div class="category-btn">Anime</div>
             <div class="bracket">]</div>
-            <div class="icon-nav"><img class="arrow" src="assets/img_icon/right_arrow.png" alt="right_arrow"></div>
+            <div class="icon-nav"><img class="arrow" src="../../assets/img_icon/right_arrow.png" alt="right_arrow"></div>
             <div class="clear"></div>
         </div>
         
@@ -60,7 +61,7 @@ if (isset($_SESSION['user_id'])) {
             <span class="close-btn" onclick="closeLogin()">&times;</span>
             
             <h1 align="center" class="title-login">Login with Password</h1>
-            <form action="login_process.php" method="POST" name="formLogin">
+            <form action="../../login/login_process.php" method="POST" name="formLogin">
                 <p class="form-label-login">Username</p>
                 <input type="text" id="username" name="username" class="input-field-login" required>
                 
@@ -68,9 +69,9 @@ if (isset($_SESSION['user_id'])) {
                 <input type="password" id="password" name="password" class="input-field-login" required>
                 
                 <p class="links">
-                    <a href="reset-password.php" style="color: #2b78e4;">Lupa sandi ?</a><br>
+                    <a href="../../login/reset-password.php" style="color: #2b78e4;">Lupa sandi ?</a><br>
                     <span style="color: white;">Belum punya akun?</span> 
-                    <b><a href="register.php" style="color: #2b78e4;">Register</a></b>
+                    <b><a href="../../login/register.php" style="color: #2b78e4;">Register</a></b>
                 </p>
                 <div align="right" style="margin-top: -30px;">
                     <button type="submit" class="btn-login-submit">LOGIN</button>
@@ -79,6 +80,7 @@ if (isset($_SESSION['user_id'])) {
         </div>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/index.js"></script>
 </body>
 </html>

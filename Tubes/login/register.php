@@ -1,5 +1,5 @@
 <?php
-require 'config.php';
+$conn = require '../config.php';
 $message = ""; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_register'])) {
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_register'])) {
         mysqli_stmt_bind_param($stmt_insert, "sss", $username, $email, $password);
         
         if (mysqli_stmt_execute($stmt_insert)) {
-            $message = "<p style='color: #4CAF50; text-align: center; margin-bottom: 15px;'>Registrasi Berhasil! Silakan <a href='index.php' style='color:#2b78e4;'>Login</a>.</p>";
+            $message = "<p style='color: #4CAF50; text-align: center; margin-bottom: 15px;'>Registrasi Berhasil! Silakan <a href='../views/user/index.php' style='color:#2b78e4;'>Login</a>.</p>";
         } else {
             $message = "<p style='color: #ff4d4d; text-align: center; margin-bottom: 15px;'>Terjadi kesalahan server.</p>";
         }
@@ -44,7 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_register'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieDB - Register</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> </head>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/register.css"> </head>
 <body class="bg-register">
     
     <header class="navbar">
@@ -55,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_register'])) {
             <input type="text" class="search-bar" placeholder="Search Movies">
         </div>
         <div class="nav-right">
-            <button type="button" class="btn-black" onclick="window.location.href='index.php'">Login</button>
+            <button type="button" class="btn-black" onclick="window.location.href='../views/user/index.php'">Login</button>
         </div>
         <div class="clear"></div>
     </header>
@@ -80,5 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['btn_register'])) {
             </div>
         </form>
     </main>
+
+    <script src="../assets/js/register.js"></script>
 </body>
 </html>

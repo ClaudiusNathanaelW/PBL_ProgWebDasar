@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php';
+$conn = require '../../config.php';
 
 if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'admin') {
     header("Location: index.php");
@@ -16,8 +16,8 @@ $query = "SELECT m.id_movie, m.title, m.created_at, GROUP_CONCAT(g.genre_name SE
 $result = mysqli_query($conn, $query);
 ?>
 
-<?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
+<?php include '../layouts/header.php'; ?>
+<?php include '../layouts/sidebar.php'; ?>
 
         <div id="content">
             <div id="transaction-section">

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'config.php';
+$conn = require '../../config.php';
 
 if (!isset($_SESSION['username']) || $_SESSION['role'] !== 'admin') {
     header("Location: index.php");
@@ -16,8 +16,8 @@ $query = "SELECT i.id_invoice, u.username, SUM(id.quantity) AS total_qty, i.crea
 $result = mysqli_query($conn, $query);
 ?>
 
-<?php include 'header.php'; ?>
-<?php include 'sidebar.php'; ?>
+<?php include '../layouts/header.php'; ?>
+<?php include '../layouts/sidebar.php'; ?>
 
         <div id="content">
             <div id="transaction-section">
