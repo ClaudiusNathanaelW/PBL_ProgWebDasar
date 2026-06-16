@@ -25,8 +25,7 @@ if (!$movie) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($movie['title']) ?> - MovieDB</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/movie_review.css"> </head>
+    <link rel="stylesheet" href="assets/css/movie_review.css"> </head>
 <body class="bg-cream">
 
     <div class="navbar">
@@ -47,7 +46,7 @@ if (!$movie) {
         
         <div class="movie-hero">
             <div class="poster-col">
-                <img src="../../assets/img_movie/<?= htmlspecialchars($movie['poster_url']) ?>" alt="<?= htmlspecialchars($movie['title']) ?>" style="width: 100%;">
+                <img src="assets/assets/img_movie/<?= htmlspecialchars($movie['poster_url']) ?>" alt="<?= htmlspecialchars($movie['title']) ?>" style="width: 100%;">
             </div>
             
             <div class="details-col">
@@ -111,8 +110,8 @@ if (!$movie) {
             ?>
         </div>
     </div>
-    <script src="../../assets/js/script.js"></script>
+    <script src="js/script.js"></script>
 
-    <script src="../../assets/js/movie_review.js"></script>
+    <script src="assets/js/movie_review.js"></script>
 </body>
 </html>

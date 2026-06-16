@@ -1,4 +1,5 @@
 <?php
+
 $nama_produk  = isset($_POST['nama_item']) ? $_POST['nama_item'] : "Belum Ada Produk";
 $harga_satuan = isset($_POST['harga_item']) ? $_POST['harga_item'] : 0;
 $jumlah_beli  = isset($_POST['qty_item']) ? $_POST['qty_item'] : 0;
@@ -18,8 +19,8 @@ function formatRupiah($angka) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pembayaran MovieDB</title>
-<link rel="stylesheet" href="../assets/css/pembayaran.css">
-<script src="../assets/js/pembayaran.js"></script>
+<link rel="stylesheet" href="assets/pembayaran.css">
+<script src="assets/pembayaran.js"></script>
 </head>
 
 <body class="pembayaran-page">

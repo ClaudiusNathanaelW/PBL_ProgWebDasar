@@ -30,7 +30,7 @@ $result_user = mysqli_query($conn, $query_user);
 $user_data = mysqli_fetch_assoc($result_user);
 ?>
 
-<?php include '../layouts/header.php'; ?>
+<?php include 'header.php'; ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <main class="profile-container">
@@ -91,6 +91,6 @@ $user_data = mysqli_fetch_assoc($result_user);
     </main>
 
     </div> 
-    <script src="../../assets/js/profile.js"></script>
+    <script src="assets/js/profile.js"></script>
 </body>
 </html>
